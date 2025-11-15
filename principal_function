@@ -1,0 +1,5 @@
+function _G.killall()
+warn("This function is not available with your executor")
+end
+
+_G.killall()
