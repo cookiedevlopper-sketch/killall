@@ -2,4 +2,27 @@ function _G.killall()
 warn("This function is not available with your executor")
 end
 
-_G.killall()
+function _G.poop()
+print("i have pooped in my pants :)")
+end
+
+function _G.text()
+local TextChatService = game:GetService("TextChatService")
+local player = Players.LocalPlayer
+
+task.wait(0) 
+
+if TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
+    local channel = TextChatService:FindFirstChild("TextChannels") and TextChatService.TextChannels:FindFirstChild("RBXGeneral")
+    if channel then
+        channel:SendAsync("Roblox TOS v55.43")
+    else
+        warn("[Roblox TOS] : Script aint loaded")
+    end
+else
+    game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
+        Text = "Roblox TOS v55.43",
+        Color = Color3.fromRGB(255, 200, 0)
+    })
+end
+end
