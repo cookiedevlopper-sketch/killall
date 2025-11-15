@@ -1,3 +1,4 @@
+--- Script made by SuPraa006
 function _G.killall()
 warn("This function is not available with your executor")
 end
@@ -25,4 +26,8 @@ else
         Color = Color3.fromRGB(255, 200, 0)
     })
 end
+end
+
+function _G.Credit()
+print("Credits : @SuPraa006 on roblox Reason : Owner and only him made the script :)")
 end
